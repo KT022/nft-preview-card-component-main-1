@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;500&family=Outfit:wght@300;400;600;700&family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --s-blue: hsl(215, 51%, 70%);
+      --cyan: hsl(178, 100%, 50%);
+      --main-bg: hsl(217, 54%, 11%);
+      --card-bg: hsl(216, 50%, 16%);
+      --line: hsl(215, 32%, 27%);
+    }
+
+    *{
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[color:var(--main-bg)]">
+  
+<div class="container mx-auto my-0 h-[98vh] w-full bg-[color:var(--main-bg)] flex justify-center items-center">
+    <div class="card p-5 bg-[color:var(--card-bg)] w-[330px] h-[550px] rounded-xl flex-col justify-center items-center">
+      <div class="img flex justify-center">
+        <img class='h-[285px] rounded-md' src="./images/image-equilibrium.jpg" alt="">
+      </div>
+
+      <div class="header text-white font-semibold text-xl mt-5 mb-3">
+        Equilibrium #3429
+      </div>
+      <div class="text">
+        <p class="text-[color:var(--s-blue)] font-light text-lg">Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+
+      <div class="feature-detail flex justify-between mt-4">
+        <div class="quantity flex text-[color:var(--cyan)]">
+          <img src="./images/icon-ethereum.svg" alt="" class="h-[20px] mr-2">
+          <p class="text-[color:var(--cyan)] font-lg">0.041 ETH</p>
+        </div>
+
+        <div class="time flex">
+          <img src="./images/icon-clock.svg" alt="" class="h-[20px] mr-2">
+          <p class="text-[color:var(--s-blue)]">3 days left</p>
+        </div>
+      </div>
+      <!-- line -->
+      <div class="line border-y-[0.5px] border-[color:var(--line)] mt-3"></div>
+
+      <div class="authority flex items-center mt-4">
+        <img src="./images/image-avatar.png" alt="" 
+        class="h-10 border-2 border-white rounded-[50%] mr-2">
+        <p class="text-[color:var(--s-blue)]">Creation of <span class="text-white">Jules Wyvern</span></p>
+      </div>
+    </div>
+</div>
+  <!-- Equilibrium #3429
+
+  Our Equilibrium collection promotes balance and calm.
+
+  0.041 ETH
+  3 days left
+  
+  Creation of Jules Wyvern -->
+
+  <div class="attribution text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Khanh Truong</a>.
+  </div>
+</body>
+</html>
